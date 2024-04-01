@@ -1,0 +1,10 @@
+@mixin input {
+  border: 1px solid #6363d6;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+@mixin input-focus {
+  outline: none;
+  background-color: #eeeeff;
+}

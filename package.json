@@ -1,0 +1,22 @@
+{
+  "name": "@khyonn/dst",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:react": "turbo dev --filter @khyonn/dst-react",
+    "dev:solid": "turbo dev --filter @khyonn/dst-solid",
+    "dev:vue": "turbo dev --filter @khyonn/dst-vue",
+    "dev:style": "turbo dev --filter @khyonn/dst-style",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

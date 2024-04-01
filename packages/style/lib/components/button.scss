@@ -1,0 +1,16 @@
+@import '../static/scss/components/button';
+
+.khyonn-button {
+  @include button;
+  &:disabled {
+    @include button-disabled;
+  }
+  &:not(:disabled) {
+    &:hover {
+      @include button-hover;
+    }
+    &:active {
+      @include button-active;
+    }
+  }
+}

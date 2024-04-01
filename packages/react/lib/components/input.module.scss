@@ -1,0 +1,8 @@
+@import '@khyonn/dst-style/scss/components/input';
+
+.input {
+  @include input;
+  &:focus {
+    @include input-focus;
+  }
+}

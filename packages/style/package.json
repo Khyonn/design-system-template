@@ -1,0 +1,25 @@
+{
+  "name": "@khyonn/dst-style",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./*": "./dist/*"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite serve dev",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "glob": "^10.3.10",
+    "sass": "^1.72.0",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.6"
+  }
+}
