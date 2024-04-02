@@ -1,0 +1,13 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/blocks'
+import * as InputStories from './Input.stories'
+
+<Meta title="Components/Input/Docs" of={InputStories} />
+
+# Input
+
+Input is an interactive element that user can fill text with.
+This input already has its focus state styles.
+
+<Canvas withToolbar source={{ code: `<Input placeholder="Type something here..." />` }} />
+
+You can set any attributes that [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) can take

@@ -1,0 +1,161 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="Getting started" />
+
+# Getting started
+
+Welcome ! This page is here to help you get started with our design system
+
+## Table of contents
+
+- [Installation](#installation)
+  - [Framework implementation](#framework-implementation)
+  - [Styling tools](#styling-tools)
+
+---
+
+## Installation
+
+### Framework implementation
+
+This will be mandatory if you want to create an application with one of thoses frameworks using our design system.
+
+<div class="choices-container">
+  <div class="choices">
+    <label>
+      <input id="framework-react" name="framework" type="radio" defaultChecked />
+      <span>React</span>
+    </label>
+    <label>
+      <input id="framework-solid" name="framework" type="radio" />
+      <span>Solid</span>
+    </label>
+    <label>
+      <input id="framework-vue" name="framework" type="radio" />
+      <span>Vue</span>
+    </label>
+  </div>
+  <div class="choices">
+    <label>
+      <input id="package-manager-npm" name="package-manager" type="radio" defaultChecked />
+      <span>npm</span>
+    </label>
+    <label>
+      <input id="package-manager-pnpm" name="package-manager" type="radio" />
+      <span>pnpm</span>
+    </label>
+    <label>
+      <input id="package-manager-yarn" name="package-manager" type="radio" />
+      <span>yarn</span>
+    </label>
+  </div>
+</div>
+
+<div class="install-cmds">
+<div class="install-cmd">
+```bash
+npm i @khyonn/dst-react
+```
+
+```bash
+pnpm i @khyonn/dst-react
+```
+
+```bash
+yarn add @khyonn/dst-react
+```
+
+</div>
+
+<div class="install-cmd">
+```bash
+npm i @khyonn/dst-solid
+```
+
+```bash
+pnpm i @khyonn/dst-solid
+```
+
+```bash
+yarn add @khyonn/dst-solid
+```
+
+</div>
+
+<div class="install-cmd">
+```bash
+npm i @khyonn/dst-vue
+```
+
+```bash
+pnpm i @khyonn/dst-vue
+```
+
+```bash
+yarn add @khyonn/dst-vue
+```
+
+</div>
+</div>
+
+### Styling tools
+
+This installation is optionnal but you may want to customize or create components using our style guides.
+This package includes [Sass](https://sass-lang.com/) mixins, a [Tailwind](https://tailwindcss.com/) preset, various assets like icons and fonts, and also the base css that are already used for our differents frameworks implementations.
+
+<div class="install-cmd">
+```bash
+npm i @khyonn/dst-styling
+```
+
+```bash
+pnpm i @khyonn/dst-styling
+```
+
+```bash
+yarn add @khyonn/dst-styling
+```
+
+</div>
+
+<style>
+  {`
+.choices-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: .5rem;
+  margin-top: 2rem;
+}
+.choices-container,
+.choices,
+.choices label {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.choices-container + * .docblock-source {
+  margin-top: .75rem;
+}
+
+:root:has(#package-manager-npm:checked) .install-cmd > :nth-child(n+2) {
+  display: none;
+}
+:root:has(#package-manager-pnpm:checked) .install-cmd > :nth-child(2n+1) {
+  display: none;
+}
+:root:has(#package-manager-yarn:checked) .install-cmd > :nth-child(-n+2) {
+  display: none;
+}
+
+:root:has(#framework-react:checked) .install-cmds > :nth-child(n+2) {
+  display: none;
+}
+:root:has(#framework-solid:checked) .install-cmds > :nth-child(2n+1) {
+  display: none;
+}
+:root:has(#framework-vue:checked) .install-cmds > :nth-child(-n+2) {
+  display: none;
+}
+`}
+</style>

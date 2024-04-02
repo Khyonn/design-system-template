@@ -1,0 +1,30 @@
+{
+  "name": "@khyonn/dst-docs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.16",
+    "@khyonn/dst-solid": "workspace:*"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "1.2.25",
+    "@storybook/addon-essentials": "^8.0.5",
+    "@storybook/addon-interactions": "^8.0.5",
+    "@storybook/addon-links": "^8.0.5",
+    "@storybook/blocks": "^8.0.5",
+    "@storybook/testing-library": "0.2.2",
+    "storybook": "^8.0.5",
+    "storybook-solidjs": "1.0.0-beta.2",
+    "storybook-solidjs-vite": "1.0.0-beta.2",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.7",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}

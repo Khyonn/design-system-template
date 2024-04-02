@@ -1,0 +1,16 @@
+import { Meta, Canvas } from '@storybook/blocks'
+import * as ButtonStories from './Button.stories'
+
+<Meta title="Components/Button/Docs" of={ButtonStories} />
+
+# Button
+
+Button is a clickable interactive element that triggers a response.
+You can place text and icons inside of a button.
+Buttons are often used for form submissions and to toggle elements into view.
+This button already has its disabled, hover and active state styles.
+
+<Canvas withToolbar source={{ code: `<Button>Click me</Button>` }} />
+
+{/* <ArgTypes /> */}
+You can set any attributes that [HTMLButtonElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement) can take
