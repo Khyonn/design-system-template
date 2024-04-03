@@ -4,10 +4,11 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "dev:react": "turbo dev --filter @khyonn/dst-react",
-    "dev:solid": "turbo dev --filter @khyonn/dst-solid",
-    "dev:vue": "turbo dev --filter @khyonn/dst-vue",
-    "dev:style": "turbo dev --filter @khyonn/dst-style",
+    "dev:docs": "turbo dev --filter=dst-docs",
+    "dev:react": "turbo dev --filter=dst-react",
+    "dev:solid": "turbo dev --filter=dst-solid",
+    "dev:vue": "turbo dev --filter=dst-vue",
+    "dev:style": "turbo dev --filter=dst-style",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },

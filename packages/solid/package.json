@@ -23,8 +23,10 @@
     "lint:code": "eslint --ignore-path .gitignore --max-warnings 0 {lib,dev}/**/*.{js,ts,tsx,jsx,vue}",
     "lint:types": "tsc --noEmit"
   },
+  "dependencies": {
+    "@khyonn/dst-style": "workspace:*"
+  },
   "peerDependencies": {
-    "@khyonn/dst-style": "workspace:*",
     "solid-js": "^1.0.0"
   },
   "devDependencies": {

@@ -23,8 +23,10 @@
     "lint:code": "eslint --ignore-path .gitignore --max-warnings 0 {lib,dev}/**/*.{js,ts,tsx,jsx}",
     "lint:types": "tsc --noEmit"
   },
+  "dependencies": {
+    "@khyonn/dst-style": "workspace:*"
+  },
   "peerDependencies": {
-    "@khyonn/dst-style": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
