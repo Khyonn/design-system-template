@@ -10,9 +10,11 @@
     "dev:vue": "turbo dev --filter=dst-vue",
     "dev:style": "turbo dev --filter=dst-style",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "publish-packages": "turbo publish-package"
   },
   "devDependencies": {
+    "glob": "^10.3.12",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },

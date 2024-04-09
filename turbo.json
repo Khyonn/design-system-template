@@ -3,6 +3,7 @@
   "globalDependencies": ["**/.env.*local"],
   "remoteCache": { "enabled": false },
   "pipeline": {
+    "publish-package": {},
     "build": {
       "dependsOn": ["^build"]
     },

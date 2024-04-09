@@ -21,7 +21,8 @@
     "format:eslint": "eslint {lib,dev}/**/*.{js,ts,tsx,jsx} --fix",
     "lint": "concurrently pnpm:lint:*",
     "lint:code": "eslint --ignore-path .gitignore --max-warnings 0 {lib,dev}/**/*.{js,ts,tsx,jsx}",
-    "lint:types": "tsc --noEmit"
+    "lint:types": "tsc --noEmit",
+    "publish-package": "pnpm publish"
   },
   "dependencies": {
     "@khyonn/dst-style": "workspace:*",
